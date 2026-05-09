@@ -34,7 +34,7 @@ public class PlayerController : MonoBehaviour
             playerRigidbody.AddForce(speed, 0f,0f);
         }
 
-        if (Input.GetKey(KeyCode.UpArrow) == true)
+        if (Input.GetKey(KeyCode.LeftArrow) == true)
         {
             //왼쪽 방향키 = -x방향
             playerRigidbody.AddForce(-speed, 0f, 0f);
