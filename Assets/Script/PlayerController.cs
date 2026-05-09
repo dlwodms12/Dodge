@@ -41,4 +41,10 @@ public class PlayerController : MonoBehaviour
         }
 
     }
+    //외부에서 접근해서 실행할 수 있도록 public 으로 선언
+    public void Die()
+    {
+        //현재 이 스크립트가 가리키고 있는 오브젝트를 비활성화 == 죽음
+        gameObject.SetActive(false);
+    }
 }
