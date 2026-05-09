@@ -40,6 +40,5 @@ public class BulletSpawner : MonoBehaviour
             //다음 생성 간격 랜덤 지정
             spawnRate = Random.Range(spawnRateMin,spawnRateMax);
         }
-
     }
 }

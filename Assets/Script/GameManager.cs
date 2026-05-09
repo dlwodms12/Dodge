@@ -4,22 +4,16 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
-
     public GameObject gameoverText; //게임 오버 시 활성화할 텍스트 오브젝트
     public Text timeText;
     public Text recordText;
-
     private float surviveTime; //생존시간
     private bool isGameover; //게임 오버 상태
-
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         surviveTime = 0;
         isGameover = false;
     }
-
-    // Update is called once per frame
     void Update()
     {
         //경과 시간 표시(게임 오버가 아닌 동안)
@@ -38,7 +32,6 @@ public class GameManager : MonoBehaviour
             }
         }
     }
-
     //현재 게임을 게임오버 상태로 변경하는 메소드
     public void EndGame()
     {
