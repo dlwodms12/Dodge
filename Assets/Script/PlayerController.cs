@@ -65,5 +65,10 @@ public class PlayerController : MonoBehaviour
     {
         //현재 이 스크립트가 가리키고 있는 오브젝트를 비활성화 == 죽음
         gameObject.SetActive(false);
+
+        //씬에 존재하는 게임 매니저 오브젝트를 찾아서 가져옴
+        GameManager gameManager = FindFirstObjectByType<GameManager>();
+        //가져온 게임 매니저의 EndGame() 메서드 실행
+        gameManager.EndGame();
     }
 }
