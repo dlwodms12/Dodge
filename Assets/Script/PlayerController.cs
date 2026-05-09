@@ -32,33 +32,6 @@ public class PlayerController : MonoBehaviour
         playerRigidbody.linearVelocity = newVelocity;
 
 
-        /*
-        //입력감지(구버전)
-        if(Input.GetKey(KeyCode.UpArrow)==true)
-        {
-            //위쪽 방향키 = z방향
-            playerRigidbody.AddForce(0f, 0f, speed);
-        }
-
-        if (Input.GetKey(KeyCode.DownArrow) == true)
-        {
-            //아래쪽 방향키 = -z방향
-            playerRigidbody.AddForce(0f, 0f, -speed);
-        }
-
-        if (Input.GetKey(KeyCode.RightArrow) == true)
-        {
-            //오른쪽 방향키 = x방향
-            playerRigidbody.AddForce(speed, 0f,0f);
-        }
-
-        if (Input.GetKey(KeyCode.LeftArrow) == true)
-        {
-            //왼쪽 방향키 = -x방향
-            playerRigidbody.AddForce(-speed, 0f, 0f);
-        }
-        */
-
     }
     //외부에서 접근해서 실행할 수 있도록 public 으로 선언
     public void Die()
